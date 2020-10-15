@@ -9,15 +9,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Copa.Controllers
 {
-    public class SelecoesController1 : Controller
+    //Para possibilitar a injeção de dependencias
+    public class SelecoesController : Controller
     {
         private readonly Contexto _contexto;
 
-        public SelecoesController1(Contexto contexto)
+        public SelecoesController(Contexto contexto)
         {
             _contexto = contexto;
         }
 
+        //Retorna lista com os nomes das seleções cadastradas no banco para serem listadas pelo DropDownList na View Index
         public async Task<IActionResult> Index()
         {
             ViewBag.SelecaoId = new SelectList
@@ -34,6 +36,7 @@ namespace Copa.Controllers
             return View(await _contexto.Selecoes.ToListAsync());
         }
 
+        //Cria as seleções
         [HttpGet]
         public IActionResult CriarSelecao()
         {
@@ -46,16 +49,18 @@ namespace Copa.Controllers
             if (ModelState.IsValid)
             {
                 _contexto.Add(selecao);
+                //Caso os dados sejam válidos, são salvos no BD
                 await _contexto.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            //caso os dados sejam invalidos, retorna a view para serem corrigidos
             else return View(selecao);
         }
 
-        
-        
 
-        
+
+
+        //Apaga as seleções
         [HttpGet]
         public IActionResult ExcluirSelecao(int? id)
         {
@@ -73,6 +78,7 @@ namespace Copa.Controllers
         {
             if (id != null)
             {
+                //Caso o ID não seja nulo, a seleção correspondente é removida do BD e os novos dados são salvos
                 _contexto.Remove(selecao);
                 await _contexto.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

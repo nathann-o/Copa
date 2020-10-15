@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Copa.Models
 {
+    //modelo Base com dados que serão enviados para o banco
     public class Selecao
     {
         public int SelecaoID { get; set; }

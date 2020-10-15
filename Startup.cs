@@ -33,6 +33,7 @@ namespace Copa
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //passando parametros de configuração
             services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(Configuration.GetConnectionString("DBConnect")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -59,7 +60,7 @@ namespace Copa
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=SelecoesController1}/{action=Index}/{id?}");
+                    template: "{controller=Selecoes}/{action=Index}/{id?}");
             });
         }
     }

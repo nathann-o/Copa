@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Copa.Models.Selecao>
 
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listagem";
 }
 
-<h2>Index</h2>
 
 <p>
     <a asp-action="CriarSelecao">-> Adicione as seleções participantes do torneio </a>
@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                Classificados
             </th>
             <th></th>
         </tr>
@@ -28,9 +28,8 @@
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    
                     <a asp-action="ExcluirSelecao" asp-route-id="@item.SelecaoID">Apagar</a>
-                    
+
                 </td>
             </tr>
         }

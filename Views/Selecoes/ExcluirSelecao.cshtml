@@ -1,12 +1,9 @@
 ﻿@model Copa.Models.Selecao
 
 @{
-    ViewData["Title"] = "ExcluirSelecao";
+    ViewData["Title"] = "Apagar";
 }
 
-<h2>ExcluirSelecao</h2>
-
-<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Selecao</h4>
     <hr />
@@ -21,7 +18,7 @@
     
     <form asp-action="ExcluirSelecao">
         <input type="hidden" asp-for="SelecaoID" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Apagar" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar <- </a>
     </form>
 </div>
