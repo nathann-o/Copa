@@ -11,7 +11,6 @@ C:\Users\Nathann\source\repos\Copa\bin\Debug\netcoreapp2.1\Copa.Views.pdb
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.csprojAssemblyReference.cache
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.AssemblyInfoInputs.cache
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.AssemblyInfo.cs
-C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.csproj.CoreCompileInputs.cache
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.RazorAssemblyInfo.cache
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.RazorAssemblyInfo.cs
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.TagHelpers.input.cache
@@ -34,3 +33,7 @@ C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.dll
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.pdb
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.genruntimeconfig.cache
 C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.csproj.CopyComplete
+C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Copa.csproj.CoreCompileInputs.cache
+C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Razor\Views\SelecoesController1\Index.cshtml.g.cs
+C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Razor\Views\SelecoesController1\CriarSelecao.cshtml.g.cs
+C:\Users\Nathann\source\repos\Copa\obj\Debug\netcoreapp2.1\Razor\Views\SelecoesController1\ExcluirSelecao.cshtml.g.cs

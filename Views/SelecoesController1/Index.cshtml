@@ -1,0 +1,254 @@
+﻿@model IEnumerable<Copa.Models.Selecao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="CriarSelecao">-> Adicione as seleções participantes do torneio </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    
+                    <a asp-action="ExcluirSelecao" asp-route-id="@item.SelecaoID">Apagar</a>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Oitavas</th>
+            <th>Quartas</th>
+            <th>Semi</th>
+            <th>Final</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Final</th>
+            <th>Semi</th>
+            <th>Quartas</th>
+            <th>Oitavas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>Campeão</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>@Html.DropDownList("SelecaoId", "Seleção")</td>
+        </tr>
+    </tbody>
+</table>

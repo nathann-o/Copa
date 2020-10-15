@@ -59,7 +59,7 @@ namespace Copa
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=SelecoesController1}/{action=Index}/{id?}");
             });
         }
     }
